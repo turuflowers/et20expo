@@ -1,0 +1,95 @@
+html {
+  font-size: 100%;
+}
+body{
+  font-family: sans-serif;
+  font-size: 1em;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+  font-weight: bold;
+}
+
+h1, .h1 {
+  font-size: 3em;
+  line-height: 1.5;
+  margin: .5em 0;
+}
+@media (max-width: 576px) {
+  h1, .h1 {
+    font-size: 2em;
+  }
+}
+
+h2, .h2 {
+  font-size: 2.5em;
+  line-height: 1.5;
+  margin: .5em 0;
+}
+@media (max-width: 576px) {
+  h2, .h2 {
+    font-size: 1.8em;
+  }
+}
+
+
+h3, .h3 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin: .5em 0;
+}
+@media (max-width: 576px) {
+  h3, .h3 {
+    font-size: 1.4em;
+  }
+}
+
+
+h4, .h4 {
+  font-size: 1.75em;
+  line-height: 1.5;
+  margin: .75em 0;
+}
+@media (max-width: 576px) {
+  h4, .h4 {
+    font-size: 1.3em;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+@media (max-width: 576px) {
+  h5, .h5 {
+    font-size: 1.2em;
+  }
+}
+
+h6, .h6 {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+@media (max-width: 576px) {
+  h6, .h6t-size: 1em;
+  }
+}
+
+p,li{
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin: 1.5em 0;
+}
+
+.fs-small{
+  font-size: 1em;
+}
+.fs-big{
+  font-size: 2em;
+}

@@ -1,0 +1,42 @@
+.flickity-slider{
+  height: 70vh;
+}
+.cell{
+  width: 84%;
+  margin:0 1em;
+  height: 100%;
+  max-height: 941px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 575px) {
+  .flickity-slider{
+    height: 80vh;
+  }  
+  .cell{
+    width:100%;
+    padding-left:3em;
+    padding-right:3em;
+  }
+}
+
+.flickity-viewport{
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .flickity-viewport{
+    height: 100%;
+  }  
+}
+
+.item1{
+  background:#e18989;
+}
+.item2{
+  background:#8994e1;
+}
+.item3{
+  background:#89e19b;
+}
