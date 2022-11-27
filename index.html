@@ -1,23 +1,88 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Expo 2022</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Librerías -->
+  <link href="librerias/normalize/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="librerias/h5bp/styles.css" rel="stylesheet" type="text/css" />
+  <link href="librerias/animate/animate.css" rel="stylesheet" type="text/css" />
+  <link href="librerias/carousel/flickity.css" rel="stylesheet" type="text/css" />
+
+
+  <!-- CSS para cada módulo -->
+  <link href="styles/navmenu.css" rel="stylesheet" type="text/css" />
+  <link href="styles/carousel.css" rel="stylesheet" type="text/css" />
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  
 </head>
 
 <body>
-  Hello world
+  <header>
+    <h1>Widgets <span>copy/paste</span></h1>
+    <button class="hamburger">
+      <span class="sr-only">Menu</span>
+      <div class="bars">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </div>        
+    </button>
+    <div class="navegacion">
+      <nav>
+        <ul class="principal">
+          <li><a href="#normalize" class="animacionAncla">Normalize</a></li>
+          <li><a href="#navbar" class="animacionAncla">Nav</a></li>
+          <li><button>Animaciones ›</button>
+            <div class="subnav">
+              <button class="volver">‹ Volver</button>
+              <ul class="secundaria">
+                <li><a href="#ancla" class="animacionAncla">Ancla</a></li>
+                <li><a href="#animaciones" class="animacionAncla">Animaciones CSS</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#tabs" class="animacionAncla">Tabs</a></li>
+          <li><a href="#carousel" class="animacionAncla">Carousel</a></li>
+          <li><a href="#formularios" class="animacionAncla">Formularios</a></li>
+          <li><a href="#videohero" class="animacionAncla">Video Hero</a></li>
+          
+        </ul>
+      </nav>  
+    </div>      
+  </header>
+
+  <main>
+    
+  </main>
+
+  <!-- Librerias -->
+  <script type="text/javascript" src="librerias/jquery/jquery.js"></script>
+  <script type="text/javascript" src="librerias/animacionAncla/animacionAncla.js"></script>
+  <script type="text/javascript" src="librerias/animate/wow.js"></script>
+  <script type="text/javascript" src="librerias/carousel/flickity.js"></script>
+  
+  <script src="scripts/navmenu.js"></script>
+  <script src="scripts/animacionAncla.js"></script>
+  <script src="scripts/animacionescss.js"></script>
+  <script src="scripts/carousel.js"></script>
+
   <script src="script.js"></script>
 
- <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>
 
 </html>
