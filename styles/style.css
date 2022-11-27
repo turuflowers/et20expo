@@ -8,25 +8,13 @@ section{
   margin: 1em 0;
   padding: 3em 0;
 }
-.container{
+.content{
   max-width:1000px;
   padding: 0 1em;
   margin:0 auto;
 }
 body{
   padding-top:90px;
-}
-pre{
-  padding:0.5em;
-  background:#ffe5ad;
-  white-space:pre-wrap;
-  overflow: scroll;
-}
-pre span{
-  background:#0f0;
-}
-.soon{
-  color:#f00;
 }
 .btn{
   display:inline-block;

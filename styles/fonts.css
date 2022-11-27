@@ -2,7 +2,7 @@ html {
   font-size: 100%;
 }
 body{
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1em;
 }
 h1, .h1,
@@ -77,7 +77,8 @@ h6, .h6 {
   margin: 1em 0;
 }
 @media (max-width: 576px) {
-  h6, .h6t-size: 1em;
+  h6, .h6{
+    font-size: 1em;
   }
 }
 

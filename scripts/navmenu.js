@@ -15,7 +15,9 @@ $(document).ready(function () {
       $(".subnav").removeClass('active');
   });
 
-  $('nav a').on('click', function(){
+  $('nav a').on('click', function () {
+      $('nav a').removeClass('active');
+      $(this).addClass('active');
       $("header").removeClass('active');
       $('.hamburger').removeClass('active');
       $(".navegacion").removeClass('active');
