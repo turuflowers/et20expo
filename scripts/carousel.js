@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#carousel1').flickity({
+  $('#carousel_html').flickity({
       // options
       cellAlign: 'center',
       contain: false,
@@ -9,7 +9,8 @@ $(document).ready(function(){
       prevNextButtons: true,
       pageDots: true,
       wrapAround: true,
-      groupCells: true,
+    groupCells: true,
+      fade: true,
       autoPlay: 5000,
       pauseAutoPlayOnHover: true,
       arrowShape: {

@@ -7,6 +7,7 @@ html {
 section{
   margin: 1em 0;
   padding: 3em 0;
+  position:relative;
 }
 .content{
   max-width:1100px;
@@ -174,4 +175,26 @@ section{
 #htmlcss3{
   background: #449ACB;
   color: #fff;
+  padding: 6em 0 0;
+}
+#htmlcss3 .texto{
+  position:absolute;
+  left: 50%;
+  transform: translateX(-87%);
+  top:0;
+  width: 40%;
+  max-width: 560px;
+  z-index: 999;
+}
+#carousel_html .laptop{
+  max-width: 778px;
+}
+#carousel_html .jpg {
+  max-width: 420px;
+}
+#carousel_html .flickity-page-dots{
+  bottom:2em;
+}
+.flickity-page-dots .dot{
+  background: #fff;
 }
