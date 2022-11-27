@@ -195,6 +195,24 @@ section{
 #carousel_html .flickity-page-dots{
   bottom:2em;
 }
-.flickity-page-dots .dot{
+#carousel_html .flickity-page-dots .dot{
   background: #fff;
+}
+#carousel_html .flickity-prev-next-button {
+  background:transparent;
+}
+#carousel_html .flickity-prev-next-button .flickity-button-icon {
+  display: none;
+}
+#carousel_html .next {
+  background: url(/images/arrow_wht.svg) no-repeat center;
+  background-size: 50% auto;
+}
+#carousel_html .previous {
+  background: url(/images/arrow_wht.svg) no-repeat center;
+  background-size: 50% auto;
+    transform: rotate(180deg);
+}
+#carousel_html .flickity-button:disabled{
+  opacity: 0;
 }
