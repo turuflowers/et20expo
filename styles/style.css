@@ -397,9 +397,49 @@ section{
   background: #FFF384;
   padding: 0;
 }
-
+#proyectos #ebro .imagen{
+  background-image: url(/images/sections/proyectos/d_ebro.png);
+}
+#proyectos #et20 .imagen {
+  background-image: url(/images/sections/proyectos/d_escuela.png);
+}
+#proyectos #et20 .imagen {
+  background-image: url(/images/sections/proyectos/d_escuela.png);
+}
+#proyectos #hotel .imagen {
+  background-image: url(/images/sections/proyectos/d_hotel.png);
+}
+#proyectos #recetas .imagen {
+  background-image: url(/images/sections/proyectos/d_recetas.png);
+}
+#proyectos #elotrolado .imagen {
+  background-image: url(/images/sections/proyectos/d_elotrolado.png);
+}
+@media (max-width: 768px) {
+  #proyectos #ebro .imagen,
+  #proyectos #et20 .imagen,
+  #proyectos #et20 .imagen,
+  #proyectos #hotel .imagen,
+  #proyectos #recetas .imagen,
+  #proyectos #elotrolado .imagen {
+    width: 90%;
+    background-image: none;
+  }
+}
+#proyectos .imagen{
+  text-align: center;
+  width: 50%;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100% auto;
+}
 #proyectos .texto {
   display: none;
+}
+#proyectos .cell{
+  width: 90%;
+  display: flex;
+
 }
 @media (max-width: 768px) {
   #proyectos .texto {
@@ -423,14 +463,15 @@ section{
   max-width: 560px;
 }
 #proyectos .detalles{
-  padding-top: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   align-self: flex-start;
 }
 #proyectos .jpg{
   width: 50%;
 }
 #proyectos .d{
-  display: block;
+  display: inline-block;
 }
 #proyectos .m{
   display: none;
@@ -440,7 +481,7 @@ section{
     display: none;
   }
   #proyectos .m{
-    display: block;
+    display: inline-block;
   }
 }
 

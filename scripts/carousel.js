@@ -11,7 +11,7 @@ $(document).ready(function(){
       wrapAround: false,
     groupCells: true,
       fade: true,
-      autoPlay: 5000,
+      autoPlay: false,
       pauseAutoPlayOnHover: true,
     arrowShape: ''
   });
@@ -28,7 +28,7 @@ $(document).ready(function(){
     wrapAround: false,
     groupCells: true,
     fade: true,
-    autoPlay: 5000,
+    autoPlay: false,
     pauseAutoPlayOnHover: true,
     arrowShape: ''
   });
@@ -45,7 +45,7 @@ $('#carousel_proyectos').flickity({
     wrapAround: false,
     groupCells: true,
     fade: true,
-    autoPlay: 5000,
+    autoPlay: false,
     pauseAutoPlayOnHover: true,
     arrowShape: ''
 });
