@@ -297,3 +297,93 @@ section{
 #wireframing .textos {
   width: 45%;
 }
+
+
+
+
+
+#diseno {
+  background: #CB446C;
+  color: #fff;
+  padding: 6em 0 0;
+}
+
+#diseno .texto {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 40%;
+  max-width: 560px;
+  z-index: 999;
+}
+#diseno h3{
+  font-size: 1.25em;
+  position:absolute;
+  left:50%;
+  top:60%
+}
+#diseno .jpg{
+  width: 50%;
+}
+#diseno .cell {
+  justify-content: flex-start;
+}
+
+@media(max-width: 768px) {
+  #diseno {
+    background: #449ACB;
+    color: #fff;
+    padding: 1em 0 0;
+  }
+
+  #diseno .texto {
+    position: relative;
+    left: auto;
+    transform: none;
+    top: auto;
+    width: 90%;
+    max-width: auto;
+    z-index: 999;
+    margin: 0 auto;
+  }
+
+
+  #diseno .cell {
+    flex-direction: column;
+
+    min-height: auto;
+  }
+
+}
+
+
+#carousel_diseno .flickity-page-dots {
+  bottom: 2em;
+}
+
+#carousel_diseno .flickity-page-dots .dot {
+  background: #fff;
+}
+
+#carousel_diseno .flickity-prev-next-button {
+  background: transparent;
+}
+
+#carousel_diseno .flickity-prev-next-button .flickity-button-icon {
+  display: none;
+}
+
+#carousel_diseno .next {
+  background: url(/images/arrow_wht.svg) no-repeat center;
+  background-size: 50% auto;
+}
+
+#carousel_diseno .previous {
+  background: url(/images/arrow_wht.svg) no-repeat center;
+  background-size: 50% auto;
+  transform: rotate(180deg);
+}
+
+#carousel_diseno .flickity-button:disabled {
+  opacity: 0;
+}
