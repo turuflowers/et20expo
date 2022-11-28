@@ -5,7 +5,6 @@ html {
   box-sizing: inherit;
 }
 section{
-  margin: 1em 0;
   padding: 3em 0;
   position:relative;
 }
@@ -171,6 +170,21 @@ section{
 #intro p{
   margin: 0;
 }
+@media(max-width: 768px){
+  #intro{
+    min-height: auto;
+  }
+  #intro .content{
+    flex-direction: column;
+  }
+  #intro .textos {
+    width: 100%;
+  }
+
+  #intro .escritorio {
+    width: 100%;
+  }
+}
 
 #htmlcss3{
   background: #449ACB;
@@ -185,6 +199,38 @@ section{
   width: 40%;
   max-width: 560px;
   z-index: 999;
+}
+@media(max-width: 768px) {
+  #htmlcss3 {
+    background: #449ACB;
+    color: #fff;
+    padding: 1em 0 0;
+  }
+  #htmlcss3 .texto {
+    position: relative;
+    left: auto;
+    transform: none;
+    top: auto;
+    width: 90%;
+    max-width: auto;
+    z-index: 999;
+    margin: 0 auto;
+  }
+  #htmlcss3 .flickity-slider{
+  
+  }
+  #htmlcss3 .cell {
+    flex-direction:column;
+
+    min-height: auto;
+  }
+  #htmlcss3 .laptop{
+    order: 2;
+  }
+  #htmlcss3 .jpg {
+    order: 1;
+    max-width:200px !important;
+  }
 }
 #carousel_html .laptop{
   max-width: 778px;
@@ -215,4 +261,39 @@ section{
 }
 #carousel_html .flickity-button:disabled{
   opacity: 0;
+}
+
+
+
+
+#css3{
+  background: #D86B64 url(/images/sections/adaptativo/adaptativo.png) no-repeat left bottom;
+  background-size: auto 100%;
+  color: #fff;
+}
+#css3 .content{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+}
+#css3 .textos{
+  width: 45%;
+}
+
+#wireframing {
+  background: #6032C2 url(/images/sections/wireframe/wirefarmes.png) no-repeat right bottom;
+  background-size: auto 100%;
+  color: #fff;
+}
+
+#wireframing .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#wireframing .textos {
+  width: 45%;
 }

@@ -1,4 +1,4 @@
-var navoffset = 30;
+var navoffset = 80;
 
 var d1 = $('#intro').offset().top - navoffset;
 var d2 = $('#htmlcss3').offset().top - navoffset;
@@ -8,13 +8,11 @@ var d5 = $('#diseno').offset().top - navoffset;
 var d6 = $('#proyectos').offset().top - navoffset;
 
 $(window).resize(function () {
-    d1 = $('#intro').offset().top - navoffset;
-    d2 = $('#htmlcss3').offset().top - navoffset;
-    d3 = $('#css3').offset().top - navoffset;
-    d4 = $('#wireframing').offset().top - navoffset;
-    d5 = $('#diseno').offset().top - navoffset;
-    d6 = $('#proyectos').offset().top - navoffset;
-})
+    setTops();
+});
+
+setTimeout(setTops, 2000);
+
 $(window).scroll(function () {
     if ($(this).scrollTop() >= d1) {
         $('header').addClass('small')
@@ -47,4 +45,13 @@ $(window).scroll(function () {
 function currentSection(current) {
     $('nav a').removeClass('active');
     $('nav li:nth-child('+ current + ') a').addClass('active');
+}
+
+function setTops() {
+    d1 = $('#intro').offset().top - navoffset;
+    d2 = $('#htmlcss3').offset().top - navoffset;
+    d3 = $('#css3').offset().top - navoffset;
+    d4 = $('#wireframing').offset().top - navoffset;
+    d5 = $('#diseno').offset().top - navoffset;
+    d6 = $('#proyectos').offset().top - navoffset;   
 }

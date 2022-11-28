@@ -123,6 +123,8 @@ header .navegacion{
   position:absolute;
   left:0;
   top:0;
+  background: #fff;
+  padding: 3em 0 0;
 }
 header .navegacion.active{
   display:block;
@@ -190,7 +192,8 @@ header .principal li{
     width:80%;
     display:block;
     min-height:auto;
-    position:relative
+    position:relative;
+    padding: 0;
   }
   header nav .secundaria{
     min-height:auto;
