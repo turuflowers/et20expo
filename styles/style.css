@@ -387,3 +387,94 @@ section{
 #carousel_diseno .flickity-button:disabled {
   opacity: 0;
 }
+
+
+
+
+
+
+#proyectos{
+  background: #FFF384;
+  padding: 0;
+}
+
+#proyectos .texto {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 40%;
+  max-width: 560px;
+  z-index: 999;
+}
+#proyectos h3{
+  font-size: 1.25em;
+  position:absolute;
+  left:50%;
+  top:60%
+}
+#proyectos .jpg{
+  width: 50%;
+}
+#proyectos .cell {
+  justify-content: flex-start;
+}
+
+@media(max-width: 768px) {
+  #proyectos {
+    background: #449ACB;
+    color: #fff;
+    padding: 1em 0 0;
+  }
+
+  #proyectos .texto {
+    position: relative;
+    left: auto;
+    transform: none;
+    top: auto;
+    width: 90%;
+    max-width: auto;
+    z-index: 999;
+    margin: 0 auto;
+  }
+
+
+  #proyectos .cell {
+    flex-direction: column;
+
+    min-height: 0;
+  }
+
+}
+
+
+#carousel_proyectos .flickity-page-dots {
+  bottom: 2em;
+}
+
+#carousel_proyectos .flickity-page-dots .dot {
+  background: #fff;
+}
+
+#carousel_proyectos .flickity-prev-next-button {
+  background: transparent;
+}
+
+#carousel_proyectos .flickity-prev-next-button .flickity-button-icon {
+  display: none;
+}
+
+#carousel_proyectos .next {
+  background: url(/images/arrow_wht.svg) no-repeat center;
+  background-size: 50% auto;
+}
+
+#carousel_proyectos .previous {
+  background: url(/images/arrow_wht.svg) no-repeat center;
+  background-size: 50% auto;
+  transform: rotate(180deg);
+}
+
+#carousel_proyectos .flickity-button:disabled {
+  opacity: 0;
+}
+
