@@ -424,6 +424,9 @@ section{
   max-height: 2000em;
   padding-bottom:100%;
 }
+#wireframing .content{
+  padding: 0 2em;
+}
 @media (min-width:768px) {
   #wireframing {
     padding-bottom:90%;
@@ -442,6 +445,7 @@ section{
     display: flex;
     align-content: center;
     align-items: center;
+    padding:0 1em;
   }
   #wireframing .textos {
     width: 45%;
