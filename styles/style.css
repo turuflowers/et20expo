@@ -160,17 +160,26 @@ section{
     max-height: 800px;
   }
 }
-
+#intro{
+  padding:0;
+  min-height: 0;
+}
 #intro .content{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width:72%;
+  padding:0 1em;
 }
 #intro .textos{
-  width: 36%;
+  width: 45%;
 }
 #intro .escritorio{
-  width: 60%;
+  width: 55%;
+}
+#intro .escritorio svg{
+  position: relative;
+  left:50px;
 }
 #intro h2{
   font-size: 3.5em;
@@ -179,8 +188,15 @@ section{
 #intro p{
   margin: 0;
 }
-@media (max-width: 576px) {
-
+@media (max-width: 1200px) {
+  #intro .textos {
+    width: 50%;
+  }
+  #intro .escritorio {
+    width: 50%;
+  }
+}
+@media (max-width: 1100px) {
   #intro h2 {
     font-size: 2em;
   }
@@ -188,24 +204,43 @@ section{
 @media(max-width: 992px){
   #intro{
     min-height: 0;
-    max-height: 600px;
+    /*max-height: 600px;*/
+    padding:0;
   }
   #intro .content{
-    flex-direction: column;
+    padding:0 2em;
+    max-width:98%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #intro{
+    height:auto;
+    max-height: 2000em;
+  }
+  #intro .content{
+  flex-direction: column;
+    max-width:100%;
   }
   #intro .textos {
+    padding-top:2em;
     width: 100%;
   }
 
   #intro .escritorio {
     width: 100%;
   }
+
 }
 
 #htmlcss3{
   background: #449ACB;
   color: #fff;
   padding: 6em 0 0;
+  display:flex;
+  align-items: flex-end;
+  min-height: 0;
 }
 #htmlcss3 .texto{
   position:absolute;
@@ -216,11 +251,19 @@ section{
   max-width: 560px;
   z-index: 999;
 }
+@media (max-width: 1200px) {
+  #htmlcss3 .texto{
+    top:10%;
+    width: 40%;
+    max-width: 560px;
+  }
+}
 @media(max-width: 992px) {
   #htmlcss3 {
-    background: #449ACB;
-    color: #fff;
     padding: 1em 0 0;
+    flex-direction: column;
+    height: auto;
+    max-height: 2000em;
   }
   #htmlcss3 .texto {
     position: relative;
@@ -228,7 +271,7 @@ section{
     transform: none;
     top: auto;
     width: 90%;
-    max-width: auto;
+    max-width: 100%;
     z-index: 999;
     margin: 0 auto;
   }
@@ -246,6 +289,9 @@ section{
     order: 1;
     max-width:200px !important;
   }
+}
+#carousel_html {
+  width: 100%;
 }
 #carousel_html .laptop{
   max-width: 778px;
@@ -313,38 +359,52 @@ section{
 
 
 #css3{
-  background: #D86B64 url(../images/sections/adaptativo/adaptativo.png) no-repeat left bottom;
-  background-size: 50% auto;
+  padding:0;
+  background: #D86B64 ;
   color: #fff;
+  min-height: 0;
 }
 #css3 .content{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-height: 100vh;
+  min-height: 0;
+  max-width: 1600px;
 }
 #css3 .textos{
   width: 45%;
+  order:2;
 }
-@media (max-width:1200px) {
-  #css3 {
-    background-size: 50% auto;
-  }
+#css3 .imagen{
+  width:50%;
+  order:1;
+  align-self: flex-end;
 }
 
 @media(max-width: 992px) {
   #css3 {
-    background-position: center bottom;
-    background-size: 70% auto;
-    max-height: 700px;
+    height:auto;
   }
   #css3 .content {
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: column;
+    padding:0;
+  }
+
+  #css3 .textos{
+    padding-top:3em;
+    order:1;
+  }
+  #css3 .imagen{
+    width:100%;
+    order:2;
+    align-self: flex-end;
   }
 
   #css3 .textos {
     width: 90%;
+    margin:0 auto;
   }
 }
 

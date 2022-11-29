@@ -199,9 +199,9 @@ header .principal li{
   header .navegacion{
     width:80%;
     display:block;
-    min-height:auto;
+    min-height:0;
     position:relative;
-    padding: 0;
+    padding: 0 1em 0 0;
   }
   header nav .secundaria{
     min-height:auto;
