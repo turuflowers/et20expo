@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c831931-3b5c-4c97-9fb6-d5f46c5614b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/nicolas.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/et20expo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +18,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="447" column="14" lean-forward="false" selection-start-line="447" selection-start-column="14" selection-end-line="447" selection-end-column="14" />
+            <state relative-caret-position="388">
+              <caret line="465" column="30" lean-forward="true" selection-start-line="465" selection-start-column="30" selection-end-line="465" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -231,8 +226,8 @@
       <find>proyectos</find>
       <find>min-height: 35</find>
       <find>wirefra</find>
-      <find>src=&quot;/images</find>
       <find>intro`</find>
+      <find>src=&quot;/images</find>
     </findStrings>
     <replaceStrings>
       <replace>url(images</replace>
@@ -463,7 +458,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669630938575</updated>
       <workItem from="1669630939956" duration="4552000" />
-      <workItem from="1669684834283" duration="14278000" />
+      <workItem from="1669684834283" duration="15294000" />
     </task>
     <task id="LOCAL-00001" summary="proyectos base">
       <created>1669632380862</created>
@@ -514,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1669714440266</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixes">
+      <created>1669715188487</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669715188487</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18830000" />
+    <option name="totallyTimeSpent" value="19846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="45" width="1485" height="871" extended-state="0" />
@@ -551,6 +553,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="proyectos base" />
     <MESSAGE value="proyectos" />
     <MESSAGE value="fixes" />
@@ -969,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="447" column="14" lean-forward="false" selection-start-line="447" selection-start-column="14" selection-end-line="447" selection-end-column="14" />
+        <state relative-caret-position="388">
+          <caret line="465" column="30" lean-forward="true" selection-start-line="465" selection-start-column="30" selection-end-line="465" selection-end-column="30" />
           <folding />
         </state>
       </provider>
