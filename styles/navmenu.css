@@ -233,3 +233,9 @@ header .principal li{
     display:inline-block;
   }
 }
+@media (max-width:768px){
+  header h1 {
+    width: 20%;
+    padding-left: .5em;
+  }
+}

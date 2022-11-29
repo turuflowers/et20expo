@@ -171,6 +171,12 @@ section{
 #intro p{
   margin: 0;
 }
+@media (max-width: 576px) {
+
+  #intro h2 {
+    font-size: 2em;
+  }
+}
 @media(max-width: 768px){
   #intro{
     min-height: auto;
@@ -223,7 +229,6 @@ section{
   #htmlcss3 .cell {
     flex-direction:column;
 
-    min-height: 0;
   }
   #htmlcss3 .laptop{
     order: 2;
@@ -247,6 +252,25 @@ section{
     width:30%;
   }
 }
+@media (max-width:768px) {
+  #carousel_html .laptop {
+    width: 100%;
+    position: relative;
+    top:-100px;
+    padding-top: 40px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 19%, rgba(0, 0, 0, 0) 67%, rgba(0, 0, 0, 0) 100%);
+    z-index: 2;
+  }
+
+  #carousel_html .jpg {
+    width: 50%;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+  }
+
+}
+
 #carousel_html .cell{
   display: flex;
   justify-content: center;
@@ -269,9 +293,8 @@ section{
   background-size: 50% auto;
 }
 #carousel_html .previous {
-  background: url(/images/arrow_wht.svg) no-repeat center;
+  background: url(/images/arrow_wht_l.svg) no-repeat center;
   background-size: 50% auto;
-    transform: rotate(180deg);
 }
 #carousel_html .flickity-button:disabled{
   opacity: 0;
@@ -285,11 +308,6 @@ section{
   background-size: auto 100%;
   color: #fff;
 }
-@media (max-width:1200px) {
-  #css3 {
-    background-size: 50% auto;
-  }
-}
 #css3 .content{
   display: flex;
   justify-content: flex-end;
@@ -299,17 +317,33 @@ section{
 #css3 .textos{
   width: 45%;
 }
+@media (max-width:1200px) {
+  #css3 {
+    background-size: 50% auto;
+  }
+}
+
+@media(max-width: 768px) {
+  #css3 {
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+  #css3 .content {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #css3 .textos {
+    width: 90%;
+  }
+}
 
 #wireframing {
   background: #6032C2 url(/images/sections/wireframe/wirefarmes.png) no-repeat right bottom;
   background-size: auto 100%;
   color: #fff;
 }
-@media (max-width:1200px) {
-  #wireframing {
-    background-size: 65% auto;
-  }
-}
+
 
 #wireframing .content {
   display: flex;
@@ -322,7 +356,27 @@ section{
   width: 45%;
 }
 
+@media (max-width:1200px) {
+  #wireframing {
+    background-size: 65% auto;
+  }
+}
 
+@media(max-width: 768px) {
+  #wireframing {
+    background-position: center bottom;
+    background-size: 120% auto;
+  }
+
+  #wireframing .content {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #wireframing .textos {
+    width: 90%;
+  }
+}
 
 
 
@@ -344,7 +398,7 @@ section{
   font-size: 1.25em;
   position:absolute;
   left:50%;
-  top:60%
+  top:65%;
 }
 #diseno .jpg{
   width: 50%;
@@ -352,7 +406,14 @@ section{
 #diseno .cell {
   justify-content: flex-start;
 }
-
+@media (max-width: 992px) {
+  #diseno .texto {
+      top: 10%;
+    }
+  #diseno h3 {
+    top: 70%;
+  }
+}
 @media(max-width: 768px) {
   #diseno {
     background: #449ACB;
@@ -368,16 +429,23 @@ section{
     width: 90%;
     max-width: auto;
     z-index: 999;
-    margin: 0 auto;
+    margin: 0 auto 3em;
   }
 
-
+  #diseno .jpg {
+    width: 60%;
+  }
   #diseno .cell {
     flex-direction: column;
-
-    min-height: auto;
+    min-height: 50vh;
+    text-align: center;
   }
-
+  #diseno h3 {
+    font-size: 1.25em;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
 }
 
 
@@ -403,15 +471,22 @@ section{
 }
 
 #carousel_diseno .previous {
-  background: url(/images/arrow_wht.svg) no-repeat center;
+  background: url(/images/arrow_wht_l.svg) no-repeat center;
   background-size: 50% auto;
-  transform: rotate(180deg);
 }
 
 #carousel_diseno .flickity-button:disabled {
   opacity: 0;
 }
+@media (max-width: 768px) {
+  #proyectos .texto {
+    display: block;
+  }
 
+  #proyectos .bajada {
+    display: none;
+  }
+}
 
 
 
@@ -529,7 +604,9 @@ section{
     margin: 0 auto;
   }
 
-
+  #proyectos .detalles {
+    padding: 1em 2.5em 4em;
+  }
   #proyectos .cell {
     flex-direction: column;
     min-height: 100vh;
@@ -560,9 +637,8 @@ section{
 }
 
 #carousel_proyectos .previous {
-  background: url(/images/arrow.svg) no-repeat center;
+  background: url(/images/arrow_l.svg) no-repeat center;
   background-size: 50% auto;
-  transform: rotate(180deg);
 }
 
 #carousel_proyectos .flickity-button:disabled {
