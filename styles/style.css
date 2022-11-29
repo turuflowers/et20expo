@@ -23,6 +23,7 @@ body{
   background:#001eff;
   color:#fff;
   text-decoration:none;
+  border-radius: 30px;
 }
 img{
   width:100%;
@@ -195,7 +196,7 @@ section{
   position:absolute;
   left: 50%;
   transform: translateX(-87%);
-  top:0;
+  top:4%;
   width: 40%;
   max-width: 560px;
   z-index: 999;
@@ -222,7 +223,7 @@ section{
   #htmlcss3 .cell {
     flex-direction:column;
 
-    min-height: auto;
+    min-height: 0;
   }
   #htmlcss3 .laptop{
     order: 2;
@@ -238,8 +239,21 @@ section{
 #carousel_html .jpg {
   max-width: 420px;
 }
+@media (max-width:1200px) {
+  #carousel_html .laptop{
+    width:50%;
+  }
+  #carousel_html .jpg {
+    width:30%;
+  }
+}
+#carousel_html .cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #carousel_html .flickity-page-dots{
-  bottom:2em;
+  bottom:1em;
 }
 #carousel_html .flickity-page-dots .dot{
   background: #fff;
@@ -271,6 +285,11 @@ section{
   background-size: auto 100%;
   color: #fff;
 }
+@media (max-width:1200px) {
+  #css3 {
+    background-size: 50% auto;
+  }
+}
 #css3 .content{
   display: flex;
   justify-content: flex-end;
@@ -285,6 +304,11 @@ section{
   background: #6032C2 url(/images/sections/wireframe/wirefarmes.png) no-repeat right bottom;
   background-size: auto 100%;
   color: #fff;
+}
+@media (max-width:1200px) {
+  #wireframing {
+    background-size: 65% auto;
+  }
 }
 
 #wireframing .content {
@@ -358,7 +382,7 @@ section{
 
 
 #carousel_diseno .flickity-page-dots {
-  bottom: 2em;
+  bottom: 1em;
 }
 
 #carousel_diseno .flickity-page-dots .dot {
@@ -396,6 +420,7 @@ section{
 #proyectos{
   background: #FFF384;
   padding: 0;
+  min-height: 0;
 }
 #proyectos #ebro .imagen{
   background-image: url(/images/sections/proyectos/d_ebro.png);
@@ -456,15 +481,14 @@ section{
 #proyectos h4{
   font-size: 1.125em;
 }
-#proyectos li{
+#proyectos .detalles li{
   margin:0;
 }
 #proyectos p{
   max-width: 560px;
 }
 #proyectos .detalles{
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding:4em 1em;
   align-self: flex-start;
 }
 #proyectos .jpg{
@@ -515,7 +539,7 @@ section{
 
 
 #carousel_proyectos .flickity-page-dots {
-  bottom: 2em;
+  bottom: 1em;
 }
 
 #carousel_proyectos .flickity-page-dots .dot {
