@@ -153,6 +153,14 @@ svg#freepik_stories-telecommuting.animated #freepik--Plant--inject-9 {
 section{
   min-height: 100vh;
 }
+@media (max-width: 768px) {
+  section{
+    min-height: 0;
+    height:100vh;
+    max-height: 800px;
+  }
+}
+
 #intro .content{
   display: flex;
   justify-content: space-between;
@@ -177,9 +185,10 @@ section{
     font-size: 2em;
   }
 }
-@media(max-width: 768px){
+@media(max-width: 992px){
   #intro{
-    min-height: auto;
+    min-height: 0;
+    max-height: 600px;
   }
   #intro .content{
     flex-direction: column;
@@ -207,7 +216,7 @@ section{
   max-width: 560px;
   z-index: 999;
 }
-@media(max-width: 768px) {
+@media(max-width: 992px) {
   #htmlcss3 {
     background: #449ACB;
     color: #fff;
@@ -252,7 +261,7 @@ section{
     width:30%;
   }
 }
-@media (max-width:768px) {
+@media (max-width:992px) {
   #carousel_html .laptop {
     width: 100%;
     position: relative;
@@ -305,7 +314,7 @@ section{
 
 #css3{
   background: #D86B64 url(/images/sections/adaptativo/adaptativo.png) no-repeat left bottom;
-  background-size: auto 100%;
+  background-size: 50% auto;
   color: #fff;
 }
 #css3 .content{
@@ -323,10 +332,11 @@ section{
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 992px) {
   #css3 {
     background-position: center bottom;
-    background-size: 100% auto;
+    background-size: 70% auto;
+    max-height: 700px;
   }
   #css3 .content {
     justify-content: flex-start;
@@ -340,7 +350,7 @@ section{
 
 #wireframing {
   background: #6032C2 url(/images/sections/wireframe/wirefarmes.png) no-repeat right bottom;
-  background-size: auto 100%;
+  background-size: 50% auto;
   color: #fff;
 }
 
@@ -362,10 +372,11 @@ section{
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 992px) {
   #wireframing {
-    background-position: center bottom;
-    background-size: 120% auto;
+    background-position: right bottom;
+    background-size: 70% auto;
+    max-height: 700px;
   }
 
   #wireframing .content {
@@ -377,68 +388,64 @@ section{
     width: 90%;
   }
 }
+@media(max-width: 600px) {
+  #wireframing {
+    background-size: 90% auto;
+  }
+}
 
 
 
 #diseno {
   background: #CB446C;
   color: #fff;
-  padding: 6em 0 0;
+  display: flex;
+  align-items: center;
 }
-
 #diseno .texto {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  width: 40%;
-  max-width: 560px;
-  z-index: 999;
+  display: none;
 }
 #diseno h3{
   font-size: 1.25em;
-  position:absolute;
-  left:50%;
-  top:65%;
 }
 #diseno .jpg{
   width: 50%;
 }
 #diseno .cell {
+  display: flex;
   justify-content: flex-start;
+  align-items: center;
+  min-height: 600px;
 }
-@media (max-width: 992px) {
-  #diseno .texto {
-      top: 10%;
-    }
-  #diseno h3 {
-    top: 70%;
-  }
+#diseno .detalles{
+  width:40%;
 }
-@media(max-width: 768px) {
+@media(max-width: 992px) {
   #diseno {
-    background: #449ACB;
-    color: #fff;
     padding: 1em 0 0;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 700px;
   }
-
+  #diseno .cell{
+    flex-direction: column;
+    min-height: 350px;
+    text-align: center;
+  }
   #diseno .texto {
-    position: relative;
-    left: auto;
-    transform: none;
-    top: auto;
     width: 90%;
-    max-width: auto;
     z-index: 999;
-    margin: 0 auto 3em;
+    margin: 0 auto;
+    display: block;
   }
-
+  #diseno .bajada{
+    display: none;
+  }
+  #diseno .detalles{
+    width:90%;
+  }
   #diseno .jpg {
     width: 60%;
-  }
-  #diseno .cell {
-    flex-direction: column;
-    min-height: 50vh;
-    text-align: center;
   }
   #diseno h3 {
     font-size: 1.25em;
@@ -447,7 +454,9 @@ section{
     top: auto;
   }
 }
-
+#carousel_diseno{
+  width:100%;
+}
 
 #carousel_diseno .flickity-page-dots {
   bottom: 1em;
@@ -478,7 +487,7 @@ section{
 #carousel_diseno .flickity-button:disabled {
   opacity: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #proyectos .texto {
     display: block;
   }
@@ -515,7 +524,7 @@ section{
 #proyectos #elotrolado .imagen {
   background-image: url(/images/sections/proyectos/d_elotrolado.png);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #proyectos #ebro .imagen,
   #proyectos #et20 .imagen,
   #proyectos #et20 .imagen,
@@ -524,6 +533,10 @@ section{
   #proyectos #elotrolado .imagen {
     width: 90%;
     background-image: none;
+  }
+  #proyectos{
+    max-height: 2000em;
+    height:auto;
   }
 }
 #proyectos .imagen{
@@ -541,7 +554,7 @@ section{
   display: flex;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #proyectos .texto {
     display: block;
   }
@@ -575,7 +588,7 @@ section{
 #proyectos .m{
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #proyectos .d{
     display: none;
   }
@@ -588,7 +601,7 @@ section{
   justify-content: flex-start;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 992px) {
   #proyectos {
     padding: 1em 0 0;
   }
