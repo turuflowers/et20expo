@@ -279,8 +279,9 @@ section{
     left: auto;
     transform: none;
     top: auto;
-    width: 90%;
+    width: 100%;
     max-width: 100%;
+    padding:0 2em;
     z-index: 999;
     margin: 0 auto;
   }
@@ -308,7 +309,7 @@ section{
 #carousel_html .jpg {
   max-width: 420px;
 }
-@media (max-width:1200px) {
+@media (max-width:1300px) {
   #carousel_html .laptop{
     width:50%;
   }
@@ -576,11 +577,11 @@ section{
     text-align: center;
   }
   #diseno .texto {
-    width: 90%;
+    width: 100%;
     z-index: 999;
     margin: 0 auto;
     display: block;
-    padding-top: 3em;
+    padding: 3em 2em 0;
   }
   #diseno .bajada{
     display: none;
@@ -677,6 +678,9 @@ section{
 #proyectos p{
   max-width: 560px;
 }
+#proyectos ul{
+  margin-bottom:2em;
+}
 #proyectos .detalles{
   padding:4em 1em;
   align-self: flex-start;
@@ -714,7 +718,7 @@ section{
     left: auto;
     transform: none;
     top: auto;
-    width: 85%;
+    width: 90%;
     max-width: 450px;
     z-index: 999;
     margin: 0 auto;
@@ -738,7 +742,9 @@ section{
   #proyectos .jpg img{
     max-width: 320px;
   }
-
+  #proyectos .text-center{
+    text-align: center;
+  }
 }
 
 
