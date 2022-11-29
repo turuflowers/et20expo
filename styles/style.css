@@ -298,11 +298,11 @@ section{
   display: none;
 }
 #carousel_html .next {
-  background: url(/images/arrow_wht.svg) no-repeat center;
+  background: url(../images/arrow_wht.svg) no-repeat center;
   background-size: 50% auto;
 }
 #carousel_html .previous {
-  background: url(/images/arrow_wht_l.svg) no-repeat center;
+  background: url(../images/arrow_wht_l.svg) no-repeat center;
   background-size: 50% auto;
 }
 #carousel_html .flickity-button:disabled{
@@ -313,7 +313,7 @@ section{
 
 
 #css3{
-  background: #D86B64 url(/images/sections/adaptativo/adaptativo.png) no-repeat left bottom;
+  background: #D86B64 url(../images/sections/adaptativo/adaptativo.png) no-repeat left bottom;
   background-size: 50% auto;
   color: #fff;
 }
@@ -349,7 +349,7 @@ section{
 }
 
 #wireframing {
-  background: #6032C2 url(/images/sections/wireframe/wirefarmes.png) no-repeat right bottom;
+  background: #6032C2 url(../images/sections/wireframe/wirefarmes.png) no-repeat right bottom;
   background-size: 50% auto;
   color: #fff;
 }
@@ -475,12 +475,12 @@ section{
 }
 
 #carousel_diseno .next {
-  background: url(/images/arrow_wht.svg) no-repeat center;
+  background: url(../images/arrow_wht.svg) no-repeat center;
   background-size: 50% auto;
 }
 
 #carousel_diseno .previous {
-  background: url(/images/arrow_wht_l.svg) no-repeat center;
+  background: url(../images/arrow_wht_l.svg) no-repeat center;
   background-size: 50% auto;
 }
 
@@ -507,22 +507,22 @@ section{
   min-height: 0;
 }
 #proyectos #ebro .imagen{
-  background-image: url(/images/sections/proyectos/d_ebro.png);
+  background-image: url(../images/sections/proyectos/d_ebro.png);
 }
 #proyectos #et20 .imagen {
-  background-image: url(/images/sections/proyectos/d_escuela.png);
+  background-image: url(../images/sections/proyectos/d_escuela.png);
 }
 #proyectos #et20 .imagen {
-  background-image: url(/images/sections/proyectos/d_escuela.png);
+  background-image: url(../images/sections/proyectos/d_escuela.png);
 }
 #proyectos #hotel .imagen {
-  background-image: url(/images/sections/proyectos/d_hotel.png);
+  background-image: url(../images/sections/proyectos/d_hotel.png);
 }
 #proyectos #recetas .imagen {
-  background-image: url(/images/sections/proyectos/d_recetas.png);
+  background-image: url(../images/sections/proyectos/d_recetas.png);
 }
 #proyectos #elotrolado .imagen {
-  background-image: url(/images/sections/proyectos/d_elotrolado.png);
+  background-image: url(../images/sections/proyectos/d_elotrolado.png);
 }
 @media (max-width: 992px) {
   #proyectos #ebro .imagen,
@@ -645,12 +645,12 @@ section{
 }
 
 #carousel_proyectos .next {
-  background: url(/images/arrow.svg) no-repeat center;
+  background: url(../images/arrow.svg) no-repeat center;
   background-size: 50% auto;
 }
 
 #carousel_proyectos .previous {
-  background: url(/images/arrow_l.svg) no-repeat center;
+  background: url(../images/arrow_l.svg) no-repeat center;
   background-size: 50% auto;
 }
 
