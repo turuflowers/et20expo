@@ -15,6 +15,7 @@ section{
 }
 body{
   padding-top:90px;
+  overflow-x: hidden;
 }
 .btn{
   display:inline-block;
@@ -231,7 +232,9 @@ section{
   #intro .escritorio {
     width: 100%;
   }
-
+  #intro .escritorio svg{
+    left:0;
+  }
 }
 
 #htmlcss3{
@@ -401,6 +404,11 @@ section{
     order:2;
     align-self: flex-end;
   }
+  #css3 .imagen img{
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
 
   #css3 .textos {
     width: 90%;
@@ -410,49 +418,71 @@ section{
 
 #wireframing {
   background: #6032C2 url(../images/sections/wireframe/wirefarmes.png) no-repeat right bottom;
-  background-size: 50% auto;
+  background-size: 110% auto;
   color: #fff;
+  height:auto;
+  max-height: 2000em;
+  padding-bottom:100%;
 }
-
-
-#wireframing .content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-}
-
-#wireframing .textos {
-  width: 45%;
-}
-
-@media (max-width:1200px) {
+@media (min-width:768px) {
   #wireframing {
-    background-size: 65% auto;
+    padding-bottom:90%;
+    background-size: 100% auto;
   }
 }
-
-@media(max-width: 992px) {
+@media (min-width:992px) {
   #wireframing {
-    background-position: right bottom;
+    padding-top:0;
+    padding-bottom:0;
+    height:auto;
+    min-height: 0;
     background-size: 70% auto;
-    max-height: 700px;
   }
-
   #wireframing .content {
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: flex;
+    align-content: center;
+    align-items: center;
   }
-
   #wireframing .textos {
-    width: 90%;
+    width: 45%;
+    padding-top: 200px;
+    padding-bottom: 300px;
   }
 }
-@media(max-width: 600px) {
+@media (min-width:1300px) {
   #wireframing {
-    background-size: 90% auto;
+    background-size: 60% auto;
   }
 }
+
+
+/*@media (max-width:1200px) {*/
+  /*#wireframing {*/
+    /*background-size: 65% auto;*/
+  /*}*/
+/*}*/
+
+/*@media(max-width: 992px) {*/
+  /*#wireframing {*/
+    /*background-position: right bottom;*/
+    /*background-size: 70% auto;*/
+    /*max-height: 700px;*/
+  /*}*/
+
+  /*#wireframing .content {*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+  /*}*/
+
+  /*#wireframing .textos {*/
+    /*width: 90%;*/
+  /*}*/
+/*}*/
+/*@media(max-width: 600px) {*/
+  /*#wireframing {*/
+    /*background-size: 90% auto;*/
+  /*}*/
+/*}*/
 
 
 
@@ -461,6 +491,8 @@ section{
   color: #fff;
   display: flex;
   align-items: center;
+  height:auto;
+  min-height: 0;
 }
 #diseno .texto {
   display: none;
@@ -479,40 +511,6 @@ section{
 }
 #diseno .detalles{
   width:40%;
-}
-@media(max-width: 992px) {
-  #diseno {
-    padding: 1em 0 0;
-    flex-direction: column;
-    justify-content: center;
-    max-height: 700px;
-  }
-  #diseno .cell{
-    flex-direction: column;
-    min-height: 350px;
-    text-align: center;
-  }
-  #diseno .texto {
-    width: 90%;
-    z-index: 999;
-    margin: 0 auto;
-    display: block;
-  }
-  #diseno .bajada{
-    display: none;
-  }
-  #diseno .detalles{
-    width:90%;
-  }
-  #diseno .jpg {
-    width: 60%;
-  }
-  #diseno h3 {
-    font-size: 1.25em;
-    position: relative;
-    left: auto;
-    top: auto;
-  }
 }
 #carousel_diseno{
   width:100%;
@@ -547,16 +545,46 @@ section{
 #carousel_diseno .flickity-button:disabled {
   opacity: 0;
 }
-@media (max-width: 992px) {
-  #proyectos .texto {
-    display: block;
-  }
 
-  #proyectos .bajada {
+@media(max-width: 992px) {
+  #diseno {
+    padding: 1em 0 3em;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 2000em;
+  }
+  #diseno .cell{
+    flex-direction: column;
+    min-height: 0;
+    text-align: center;
+  }
+  #diseno .texto {
+    width: 90%;
+    z-index: 999;
+    margin: 0 auto;
+    display: block;
+    padding-top: 3em;
+  }
+  #diseno .bajada{
     display: none;
   }
+  #diseno .detalles{
+    width:90%;
+  }
+  #diseno .jpg {
+    width: 60%;
+  }
+  #diseno h3 {
+    font-size: 1.25em;
+    position: relative;
+    left: auto;
+    top: auto;
+    padding-bottom:1em;
+  }
+  #carousel_diseno .flickity-page-dots {
+    bottom: -1em;
+  }
 }
-
 
 
 
@@ -593,10 +621,7 @@ section{
   #proyectos #elotrolado .imagen {
     width: 90%;
     background-image: none;
-  }
-  #proyectos{
-    max-height: 2000em;
-    height:auto;
+    margin:0 auto
   }
 }
 #proyectos .imagen{
@@ -663,26 +688,38 @@ section{
 
 @media(max-width: 992px) {
   #proyectos {
-    padding: 1em 0 0;
+    padding: 2em 0 0;
+    max-height: 2000em;
+    height:auto;
   }
-
   #proyectos .texto {
     position: relative;
     left: auto;
     transform: none;
     top: auto;
-    width: 90%;
-    max-width: auto;
+    width: 85%;
+    max-width: 450px;
     z-index: 999;
     margin: 0 auto;
   }
 
   #proyectos .detalles {
-    padding: 1em 2.5em 4em;
+    padding: 1em 0 3em;
+    margin: 0 auto;
+    width: 88%;
+    max-width: 450px;
   }
   #proyectos .cell {
     flex-direction: column;
     min-height: 100vh;
+  }
+
+  #proyectos .jpg {
+    width: 40%;
+  }
+
+  #proyectos .jpg img{
+    max-width: 320px;
   }
 
 }
@@ -707,11 +744,13 @@ section{
 #carousel_proyectos .next {
   background: url(../images/arrow.svg) no-repeat center;
   background-size: 50% auto;
+  right:0;
 }
 
 #carousel_proyectos .previous {
   background: url(../images/arrow_l.svg) no-repeat center;
   background-size: 50% auto;
+  left:0;
 }
 
 #carousel_proyectos .flickity-button:disabled {
