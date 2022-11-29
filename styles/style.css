@@ -418,7 +418,8 @@ section{
   }
 
   #css3 .textos {
-    width: 90%;
+    width: 100%;
+    padding:3em 2em 0;
     margin:0 auto;
   }
 }
